@@ -3,12 +3,16 @@
     outline: none;
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    text-align: center;
+    align-items: baseline;
+    border-bottom:solid black;
+}
 .header{
     display: block;
     background-color: white;
 }
 #body{
-    position: relative;
     background-color: #eaf4ff;
     margin: 0%;
 }
@@ -44,9 +48,55 @@ ol.menu li{
     opacity: 0;
     transition: 0.3s;
 }
-body.open .navbar-overlay{
-    visibility: visible;
-    opacity: 1;
+.main-banner {
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(/zurag/banner.svg);
+    padding-top: 65px;
+    height: 727px;
+    width: 1780px;
+}
+.card{
+    display: grid;
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 100px;
+    grid-template-areas: "image" "text";
+    margin: 75px;
+    justify-content: space-around;
+
+    font-family: roboto;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card-image {
+    background: url(/zurag/rek1.jpg);
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+.card-text .date {
+    color: rgb(26, 1, 108);
+    font-size: 13px;
+}
+.card-text .p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (min-width: 600px) {
     .navbar{
