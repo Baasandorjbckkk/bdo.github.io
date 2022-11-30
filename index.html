@@ -8,25 +8,30 @@
     <meta name="keywords" content="аялал, тэнгэр, травэл, аялах, гадаад аялал, хямд аялал">
 <title>Tengertravel.mn</title>
 <link rel="stylesheet" href="styel.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous"/>
 </head>
-<header>
-    <nav class="navbar">
-    <img src="zurag/tengertravel.png" alt="Тав тухтай таны аялал" height="40px" width="150px" style=" left: 20px; top: 8px;">
-    <ol class="menu">
-    <li><img src="/zurag/home.svg" alt="Home" height="35px" width="25px">Нүүр</li>
-    <li><img src="/zurag/travels.svg" alt="Travels"> Аялалууд</li>
-    <li><img src="/zurag/news.svg" alt="News"> Мэдээ, мэдээлэл</li>
-    <li><img src="/zurag/about.svg" alt="About"> Бидний тухай</li>
-    <li><img src="/zurag/log in.svg" alt="Log_in"> Нэвтрэх</li>
-    </ol>
+<nav class="nav">
+    <img src="zurag/tengertravel.png" alt="Тав тухтай таны аялал" class="logo">
+    <ul>
+    <li><a href="#index.html"><i class="fa-thin fa-house"></i>Нүүр</a></li>
+    <li><a href="#"><i class="fa-thin fa-person-walking-luggage"></i>Аялалууд</a></li>
+    <li><a href="#"><i class="fa-thin fa-newspaper"></i>Мэдээ, мэдээлэл</a></li>
+    <li><a href="#"><i class="fa-thin fa-memo-circle-info"></i>Бидний тухай</a></li>
+    <li><a href="#"><i class="fa-thin fa-user"></i>Нэвтрэх</a></li>
+    </ul>
     </nav>
-</header>
 <body id="body">
     <section class="main-banner">
-        <p>une bichih</p>
     </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
     <h1>Манай Аялалууд</h1>
-    <div class="line"></div>
     <section class="card">
         <div class="card-image"></div>
             <div class="card-text">
