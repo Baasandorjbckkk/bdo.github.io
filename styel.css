@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    -webkit-font-smoothing: antialiased;
 }
 body {
     display: grid;
@@ -96,6 +95,48 @@ img {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
+}
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider span {
+    position: absolute;
+    top: 0,2rem;
+    bottom: 1rem;
+    left: 2rem;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(500px);
+}
+.slider span img {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+.slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+footer {
+    display: grid;
 }
 @media only screen and (min-width: 600px) {
     .nav{
