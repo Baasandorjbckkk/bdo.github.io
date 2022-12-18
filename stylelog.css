@@ -60,6 +60,7 @@ footer{
     position: sticky;
     justify-content: flex-end;
     position: relative;
+    background: linear-gradient(90deg, rgba(209, 97, 99, 0.51) -1.71%, rgba(209, 97, 150, 0.51) 22.35%, rgba(161, 97, 209, 0.51) 49.42%, rgba(97, 141, 209, 0.51) 74.49%, rgba(97, 174, 209, 0.51) 94.54%);;
 }
 .container {
     height: 100vh;
