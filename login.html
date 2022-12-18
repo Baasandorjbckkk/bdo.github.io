@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Нэвтрэх хэсэг</title>
     <link rel="stylesheet" href="stylelog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -28,9 +29,93 @@
         })
     </script>
     <h1>Нэвтрэх хэсэг</h1>
-    <section>
-        <form action="email"></form>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Нэвтрэх</header>
+
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="input">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                    <a href="#" class="forgot-pass">Нууц үгээ мартсан</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <Button>Нэвтрэх</Button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Аль хэдийн хаягтай? <a href="#" class="link signup-link">Шинэ хаяг нээх</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Фэйсбүүкээр Нэвтрэх</span>
+                </a>
+            </div>
+
+        </div>
+        
+       <!-- Sighup Form -->
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Бүртгүүлэх</header>
+
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create New Password" class="input">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Repeat Password" class="input">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <Button>Бүртгүүлэх</Button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Аль хэдийн хаягтай? <a href="#" class="link login-link">Нэвтрэх</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Фэйсбүүкээр Нэвтрэх</span>
+                </a>
+            </div>
+
+        </div>
     </section>
+
+    <!--Javascript-->
+    <script src="script.js"></script>
 </body>
 <footer>
     <img src="logo.png" width="262px" height="53px" top="40px" left="85px" alt="tenger travel companys logo">
