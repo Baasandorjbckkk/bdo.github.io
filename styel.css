@@ -104,6 +104,12 @@ left: -1px;
 top: 2725px;
     background: url(/zurag/Та\ яагаад\ биднийг\ сонгох\ ёстой\ вэ.svg);
 }
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 50px 300px 50px;
+}
 .slider {
     position: relative;
     width: 200px;
@@ -114,6 +120,9 @@ top: 2725px;
 @keyframes rotate{
     0%{
         transform: perspective(1000px) rotateY(0deg);
+    }
+    50%{
+        transform: perspective(1000px) rotateY(180deg);
     }
     100% {
         transform: perspective(1000px) rotateY(360deg);
@@ -149,8 +158,9 @@ footer {
     position: sticky;
     display: flex;
     justify-content: flex-end;
-    background: linear-gradient(90deg, rgba(209, 97, 99, 0.5) 1.63%, rgba(209, 97, 150, 0.5) 25.2%, rgba(161, 97, 209, 0.5) 48.25%, rgba(97, 141, 209, 0.5) 73.87%, rgba(97, 174, 209, 0.5) 100%);
-    top: 200px;
+    background: linear-gradient(90deg, rgba(209, 97, 99, 0.5) 1.63%, rgba(209, 97, 150, 0.5) 25.2%, 
+    rgba(161, 97, 209, 0.5) 48.25%, rgba(97, 141, 209, 0.5) 73.87%, rgba(97, 174, 209, 0.5) 100%);
+    
 }
 @media only screen and (min-width: 600px) {
     .nav{
