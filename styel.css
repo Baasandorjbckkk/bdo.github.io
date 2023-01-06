@@ -104,6 +104,17 @@ left: -1px;
 top: 2725px;
     background: url(/zurag/Та\ яагаад\ биднийг\ сонгох\ ёстой\ вэ.svg);
 }
+.comment-main {
+    width: 1500px;
+    height: 400px;
+    background-size: cover;
+    background-image: url(/zurag/why\ u\ choose.jpg);
+}
+.comment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    padding: 20px;
+}
 .gallery {
     display: flex;
     align-items: center;
