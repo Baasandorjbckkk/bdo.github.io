@@ -36,7 +36,7 @@ nav .logo{
     position: relative;
     width: 150px;
     height: 40px;
-    top: 0;
+    top: -10px;
     left: 20px;
 }
 nav ul{
@@ -69,7 +69,7 @@ nav ul li a {
 }
 nav.sticky .logo,
 nav.sticky ul li a{
-    color: blueviolet;
+    color: #fff;
 }
 .cards {
     display: grid;
@@ -98,19 +98,22 @@ img {
 }
 .about {
     position: absolute;
-width: 1497px;
-height: 546px;
-left: -1px;
-top: 2725px;
+    width: 1497px;
+    height: 546px;
+    left: -1px;
+    top: 2725px;
     background: url(/zurag/Та\ яагаад\ биднийг\ сонгох\ ёстой\ вэ.svg);
 }
 .comment-main {
     width: 1500px;
     height: 400px;
-    background-size: cover;
-    background-image: url(/zurag/why\ u\ choose.jpg);
+    background-color: #7dfdff;
 }
 .comment {
+    background-color: blue;
+    opacity: 10%;
+}
+.comment p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     padding: 20px;
@@ -171,12 +174,15 @@ footer {
     justify-content: flex-end;
     background: linear-gradient(90deg, rgba(209, 97, 99, 0.5) 1.63%, rgba(209, 97, 150, 0.5) 25.2%, 
     rgba(161, 97, 209, 0.5) 48.25%, rgba(97, 141, 209, 0.5) 73.87%, rgba(97, 174, 209, 0.5) 100%);
+    min-height:100vh; 
+    flex-direction:column; 
+    justify-content:space-between;
     
 }
 @media only screen and (min-width: 600px) {
     .nav{
         justify-content: space-between;
-        padding: 0 0 0 16px
+        padding: 0 0 0 16px;
     }
     .main-banner{
         justify-content: center;
