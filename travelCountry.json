@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "name" : "Туркийн агаарын бөмбөлөгтэй аялал",
+        "path" : "/zurag/rek1.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molest"
+    },
+    {
+        "id" : 2,
+        "name" : "Улаан-Үүд, Эрхүү аялал",
+        "path" : "/zurag/rek1.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molest"
+    },
+    {
+        "id" : 3,
+        "name" : "Вьетнам Ханой аялал",
+        "path" : "/zurag/rek1.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molest"
+    }
+]
