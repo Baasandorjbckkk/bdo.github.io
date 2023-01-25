@@ -104,20 +104,35 @@ img {
     top: 2725px;
     background: url(/zurag/Та\ яагаад\ биднийг\ сонгох\ ёстой\ вэ.svg);
 }
-.comment-main {
-    width: 1500px;
-    height: 400px;
+/* .comment-main {
+    width: 1500px; 
+    height: 350px; 
     background-color: #7dfdff;
 }
 .comment {
-    background-color: blue;
-    opacity: 10%;
+    background-color: gray;
+    opacity: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.comment p {
+.comment-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+} */
+/* .comment p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     padding: 20px;
 }
+.comment img {
+    position: relative;
+    left: 100px;
+    width: 150px;
+    height: 300px;
+} */
 .gallery {
     display: flex;
     align-items: center;
