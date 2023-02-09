@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +13,8 @@ h1 {
     align-items: baseline;
     border-bottom:solid black;
     top: 65px;
+    font-family: 'Lobster', cursive;
+    font-size: 68px;
 }
 nav{
     position: fixed;
@@ -185,14 +188,16 @@ img {
 }
 footer {
     position: sticky;
-    display: flex;
-    justify-content: flex-end;
     background: linear-gradient(90deg, rgba(209, 97, 99, 0.5) 1.63%, rgba(209, 97, 150, 0.5) 25.2%, 
     rgba(161, 97, 209, 0.5) 48.25%, rgba(97, 141, 209, 0.5) 73.87%, rgba(97, 174, 209, 0.5) 100%);
     min-height:100vh; 
-    flex-direction:column; 
-    justify-content:space-between;
     
+}
+.footer-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 @media only screen and (min-width: 600px) {
     .nav{
