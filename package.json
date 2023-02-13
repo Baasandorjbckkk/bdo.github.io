@@ -1,0 +1,26 @@
+{
+  "name": "bdo.github.io",
+  "version": "1.0.0",
+  "description": "web project",
+  "main": "medee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baasandorjbckkk/bdo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baasandorjbckkk/bdo.github.io/issues"
+  },
+  "homepage": "https://github.com/Baasandorjbckkk/bdo.github.io#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {}
+}

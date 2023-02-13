@@ -1,19 +1,26 @@
+// import json from './travelCountry.json'
+const json = require("./travelCountry");
 getData();
 
 function getData() {
     let data = new Array();
 
-    fetch('./travelCountry.json', {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-        },
-    })
-    .then(response => response.json())
-    .then(response => {
-        data = response;
-        addElement(data);
-    }).catch()
+    // fetch('./travelCountry.json', {
+    //     method: 'GET',
+    //     headers: {
+    //         'Accept': 'application/json',
+    //     },
+    // })
+    // .then(response => response.json())
+    // .then(response => {
+    //     data = response;
+    //     addElement(data);
+    // }).catch(
+    //     (err) => {
+    //         console.log(err);
+    //     }
+    // )
+    addElement( json );
 }
 
 function addElement(items) {

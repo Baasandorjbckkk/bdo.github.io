@@ -3,7 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 var cors = require("cors");
 app.use(cors());
-const travel = require("./models/travel");
+// const travel = require("./infos/travel");
+// const travel = require("./travel");
 mongoose
   .connect(
     "mongodb+srv://91816464:91246464@cluster0.mxaj49s.mongodb.net/infos",
@@ -28,7 +29,7 @@ app.get("/test" , async (req, res)=>{
    
   
 });
-app.get("/info/comments" , async (req, res)=>{
+app.get("/infos/travels" , async (req, res)=>{
     console.log("object");
     const data = 
     res.status(200).send({test: "test1"});
