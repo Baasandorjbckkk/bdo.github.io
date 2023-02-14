@@ -75,8 +75,16 @@ img {
   border-bottom: 1px solid hsla(45, 4%, 81%, 0.5);
   padding: 4em;
 }
-.newsImg {
-  position: relative;
+.news{
+  padding: 14px !important;
+}
+.Desc-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3{
+  width: auto !important;
 }
 .news-img {
     position: absolute;
@@ -118,7 +126,9 @@ img {
 .active {
   border: 1px solid var(--black);
 }
-
+.news{
+  width: 100%;
+}
 @media only screen and (max-width: 900px) {
   .medeenvvd {
     grid-template-columns: 1fr;
@@ -135,13 +145,23 @@ footer {
     background: linear-gradient(90deg, rgba(209, 97, 99, 0.5) 1.63%, rgba(209, 97, 150, 0.5) 25.2%, rgba(161, 97, 209, 0.5) 48.25%, rgba(97, 141, 209, 0.5) 73.87%, rgba(97, 174, 209, 0.5) 100%);
     top: 200px;
 }
+.newsImg{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: start;
+  width: 100%;
+}
 @media only screen and (min-width: 600px) {
     .nav{
         justify-content: space-between;
         padding: 0 0 0 16px
     }
+
+    .news {
+      width: 250% !important;
+    }
     .main-banner{
-        justify-content: center;
+        justify-content: left;
     }
     .section{
         grid-auto-columns: 0fr;
